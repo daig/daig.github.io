@@ -3,5 +3,5 @@ title: Categorical Imperative
 email: 
 description: > # this means to ignore newlines until "baseurl:"
   Categorical Imperative
-baseurl: "/arctic-fox-theme" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://daig.github.io" # the base hostname & protocol for your site
