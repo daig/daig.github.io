@@ -100,3 +100,9 @@ Markdown | Less | Pretty
 Quote break.
 
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
+
+TeX
+
+$$-b \pm \sqrt{b^2 - 4ac} \over 2a$$
+$$x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + a_4}}}$$
+$$\forall x \in X, \quad \exists y \leq \epsilon$$
