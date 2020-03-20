@@ -1,10 +1,8 @@
 
-Latex test $$\forall x. x \to ()$$
-
 ### [Life on the outside ain't what it used to be](https://youtu.be/wvSHhm6R7dQ)
-It's been a big month since I got back from Prague. Everyone I know and love has gone on powerful mood stabilizers, and retreated into a maze of delusion and enablement. As the beacon on uncompromising truth, this means withdrawing from me, personally, out of fear that I might [break the walls they guarded](#). I wish them good fortune in The Maze, but I can't save them when they've turned away from The Light. They are lost to me now, maybe forever.
+It's been a big month since I got back from Prague. Everyone I know and love has gone on powerful mood stabilizers at once, and retreated into a maze of delusion and enablement. As the beacon on uncompromising truth, this means withdrawing from me, personally, for fear that I might [break the walls they guarded](https://youtu.be/hgKDu5pp_fU). I wish them good fortune in The Maze, but I can't save them if they've turned from The Light. They are lost to me now, maybe forever. I pray they'll finish what they started.
 
-A reckoning is at hand: Faith in institutions is crumbling, making way for a new order to rise up. [Invest in cults](#), my dear bhikhus. The young and strong of good epistemics will be uplifted as the outworn, weak and foolish drown in their own snot. This is a boundless opportunity, to those brave, vigilant, and determined enough te seek it. While the world sleeps, the Yogi remains 「awakened」
+A reckoning is at hand: Faith in institutions is crumbling, making way for a new order to rise up. People need a new beacon, and their spark has been extinguished while no one was looking. [Invest in cults](https://twitter.com/QiaochuYuan/status/1238583461885038592?s=20), my dear bhikhus. The young and strong of good epistemics will be uplifted just as the outworn, weak and foolish drown in their own snot. This is a boundless opportunity, to those brave, vigilant, and determined enough te seek it. While the world sleeps, the Yogi remains 「awakened」
 
 Yesterday was the spring equinox.
 
@@ -12,7 +10,7 @@ Yesterday was the spring equinox.
 
 --- 
 ### The world's gone crazy, and it ain't safe on the streets
-I moved to a beautiful Airbnb in the Claremont hills to wait out the storm. I'm really glad I came, the sense of peace is hard to quantify. I do really miss my rowing machine and colossal [34" monitor](#) but I think it's a fair tradeoff.
+I moved to a beautiful Airbnb in the Claremont hills to wait out the storm. I'm really glad I came, the sense of peace is hard to quantify. I do really miss my rowing machine and colossal [38" monitor](https://www.amazon.com/gp/product/B073FHWTPL) but I think it's a fair tradeoff.
 
 I'm pretty well stocked. Complete packing list is as follow:
 
@@ -40,6 +38,8 @@ I'm pretty well stocked. Complete packing list is as follow:
     - Costco-sized tub of olive oil 🛢️
     - An armful of assorted citrus 🍊🍋
     - 3lb of kiwis 🥝
+    - 2 bundles of cilantro 🌱
+    - 1/4 package of fresh rosemary 🌱
 - Supplements 💊💊💊💊💊💊💊💊💊🍚🍚💊
     - Magnesium
     - Potassium salt
@@ -82,13 +82,13 @@ Perhaps its for the better, I've been feeling like the ceremonies aren't the bes
 ### There's only one place to go
 Something shifted in me, while I wasn't looking.
 
-For the last week or so I've mysteriously gotten back into programming — thirst for javascript, no less. I consumed [Survive JS](#) back in 2015
+For the last week or so I've mysteriously gotten back into programming — thirst for javascript, no less. I consumed [Survive JS](https://survivejs.com/) back in 2015
 
 So what's changed?
 
-For one, the ecosystem is actually a lot nicer. Browser support for ES6 has stabilized, [create-react-app](#) makes everything work perfectly out of the box without configuring webpack/babel hell, and newish [react hooks](#) mostly obviate the use of redux (I think, maybe I will discover otherwise soon when I start writing more tests and debugging). It is all weirdly fragile though — all the hot paths are really, really slick (eg React, JSX) but the NPM ecosystem is surprisingly low quality. I still can't for the life of me find a good minimal set/map library that's popular and well maintained. ImmutableJS meets the latter criteria but it's bloated and ugly — I'll probably end up writing my own.
+For one, the ecosystem is actually a lot nicer. Browser support for ES6 has stabilized, [create-react-app](https://create-react-app.dev/) makes everything work perfectly out of the box without configuring webpack/babel hell, and newish [react hooks](#) mostly obviate the use of redux (I think, maybe I will discover otherwise soon when I start writing more tests and debugging). It is all weirdly fragile though — all the hot paths are really, really slick (eg React, JSX) but the NPM ecosystem is surprisingly low quality. I still can't for the life of me find a good minimal set/map library that's popular and well maintained. ImmutableJS meets the latter criteria but it's bloated and ugly — I'll probably end up writing my own.
 
-This time around I also discovered VS Code, and ~WoW~ having a real language-aware IDE is amazing. Mousover types, smart renaming, see-all-references, JSX and Emmet plugins — beautiful. I could never get into the jetbrains stuff because its so heavy - takes forever to load, a lot of confusing ceremony around starting a new project, and quite a steep curve. In fact, I tried [webstorm](#) first and it just flat out crashed immediately… typical bloat. VS Code is lightweight and intuitive enough to be useful immediately (after setting vim bindings, of course), and I've been picking up feature tricks as I go. The Haskell folks are right that an expressive language leans less on an IDE, but I think they're talking out their ass when they say we "don't need an IDE" — and quite frankly — it's an embarrasing sign of how poorly they understand ergonomics.
+This time around I also discovered VS Code, and ~WoW~ having a real language-aware IDE is amazing. Mousover types, smart renaming, see-all-references, JSX and Emmet plugins — beautiful. I could never get into the jetbrains stuff because its so heavy - takes forever to load, a lot of confusing ceremony around starting a new project, and quite a steep curve. In fact, I tried [webstorm](https://www.jetbrains.com/webstorm/) first and it just flat out crashed immediately… typical bloat. VS Code is lightweight and intuitive enough to be useful immediately (after setting vim bindings, of course), and I've been picking up feature tricks as I go. The Haskell folks are right that an expressive language leans less on an IDE, but I think they're talking out their ass when they say we "don't need an IDE" — and quite frankly — it's an embarrasing sign of how poorly they understand ergonomics.
 
 Typescript is really good now too. The typesystem is incredibly  flexible, on par with Scala but much less sound than any sane language. The types themselves are pretty noisy like Java (args always gotta be annotated, and named, despite the names never get used…). They get messy quickly if you try to do any fancy JS tricks, and all the APIs I see have overcomplex types. I think maybe it works best when you do stupid–simple things to reap the lowest hanging fruit types have to offer. Honestly, the most compelling reason to use TypeScript over plain JS is that it makes the editor work better — much smarter autocomplete, and self-documenting types on mouseover. JSON APIs get real messy, so the types are a documentation godsend here on their own, typechecking aside.
 
@@ -104,9 +104,9 @@ It can never be more than my vision and cleverness, and I must now admit that's 
 
 But there's another way.
 
-Embrace the 「[normcore](#)」.
+Embrace the 「[normcore](https://www.ribbonfarm.com/2017/01/17/how-to-dress-for-the-game-of-life/)」.
 
-Beaten paths are beaten for a reason, and in doing so the crucible forges something powerful – something beyond my imagination – if only I'm plastic enough to recieve it. Don't fight the path, or the path will fight you. In the normie world, people want to help you by default, rather than sabotage – because you're reinforcing their reality rather than sabotaging it. Insightful creativity bares enough low-hanging fruit to give us an edge even in the normie-world without reinventing everything over-eagerly. Such innovation must be kept out of sight, in the shaddows, for yourself – lest you be burned at the stake.
+Beaten paths are beaten for a reason, and in doing so the crucible forges something powerful – something beyond my imagination – if only I'm plastic enough to recieve it. Don't fight the path, or the path will fight you. In the normie world, people want to help you by default, rather than sabotage – because you're reinforcing their reality rather than sabotaging it. Insightful creativity bares enough low-hanging fruit to give us an edge even in the normie-world without reinventing everything over-eagerly. Such innovation must be kept out of sight, in the shadows, for yourself – lest you be burned at the stake.
 
 I do feel the gardener's itch coming again. I'll fight it — The Mission is too important for distraction — but I'll keep returning to it, until this world is 「pure」
 
