@@ -1,4 +1,5 @@
-![paradise](../assets/paradise.png)
+![sanctuary](https://user-images.githubusercontent.com/18389692/77218014-27bce500-6ae4-11ea-9423-e19f5840b591.png)
+
 ### [Life on the outside ain't what it used to be](https://youtu.be/wvSHhm6R7dQ)
 It's been a big month since I got back from Prague. Everyone I know and love has gone on powerful mood stabilizers at once, and retreated into a maze of delusion and enablement. As the beacon on uncompromising truth, this means withdrawing from me, personally, for fear that I might [break the walls they guarded](https://youtu.be/hgKDu5pp_fU). I wish them good fortune in The Maze, but I can't save them if they've turned from The Light. They are lost to me now, maybe forever. I pray they'll finish what they started.
 
