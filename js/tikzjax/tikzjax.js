@@ -21861,7 +21861,7 @@ var coredump;
 var code;
 
 async function load() {
-  let tex = await fetch(urlRoot + 'js/tikzjax/ef253ef29e2f057334f77ead7f06ed8f22607d38.wasm');
+  let tex = await fetch(urlRoot + '/js/tikzjax/ef253ef29e2f057334f77ead7f06ed8f22607d38.wasm');
   code = await tex.arrayBuffer();
   let response = await fetch_readablestream__WEBPACK_IMPORTED_MODULE_5___default()(urlRoot + '/js/tikzjax/7620f557a41f2bf40820e76ba1fd4d89a484859d.gz');
   const reader = response.body.getReader();
