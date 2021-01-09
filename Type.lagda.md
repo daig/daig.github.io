@@ -20,7 +20,7 @@ p iff q = (p → q) × (q → p)
 In GHC Haskell, every normal type has the kind `Type` (previously `*`), including `Type :: Type`.
 Previously this behavior was turned on with [`-XTypeInType`](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/glasgow_exts.html#extension-TypeInType), but is now the default.
 
-Agda's type heirarchy is more complex.
+Agda's type hierarchy is more complex.
 
 Instead of `Type : Type` we instead have `Type₀ : Type₁` and `Type₁ : Type₂` and so on.
 
@@ -61,9 +61,9 @@ infixl 6 _⊔_
 -}
 ```
 
-`Lvl` is a magic type. It isn't possible to pattern match on levels, and they're erased at runtime.
+`Lvl` is a magic type. It isn't possible to pattern match on levels, and they're erased at run-time.
 
-When multiple polymorphic levels appear in a type, the resulting level must bound all of them. This is achieved with the max operator. Eg the dependent pair:
+When multiple polymorphic levels appear in a type, the resulting level must bound all of them. This is achieved with the max operator. e.g. the dependent pair:
 
 ```agda
 record Σ {ℓa ℓb} (A : Type ℓa) (B : A → Type ℓb) : Type (ℓa ⊔ ℓb) where
@@ -72,7 +72,7 @@ record Σ {ℓa ℓb} (A : Type ℓa) (B : A → Type ℓb) : Type (ℓa ⊔ ℓ
     snd : B fst
 ```
 
-So universe levels create a nice heirarchy that statically gaurentee we only have a finite depth of meta types, but things get weird when we try to quantify over level polymorphic types. What level should we give this type?
+So universe levels create a nice hierarchy that statically guarantee we only have a finite depth of meta types, but things get weird when we try to quantify over level polymorphic types. What level should we give this type?
 
 ```agda
 very-meta = (ℓ : Lvl) → Type ℓ
@@ -83,7 +83,7 @@ very-meta = (ℓ : Lvl) → Type ℓ
 To understand this better let's see what goes wrong in the classic example that inspired universe levels: [Russel's Paradox](https://en.wikipedia.org/wiki/Russell%27s_paradox)
 
 Russel's paradox relies on _comprehension_, which lets us construct a class by quantifying over sets satisfying a predicate.
-eg $$\{ x | x ∈ ℕ , \textrm{even?} x \}$$
+e.g. $$\{ x | x ∈ ℕ , \textrm{even?} x \}$$
 
 We can encode this as:
 
@@ -93,9 +93,9 @@ module russel where
     [_∋_] : ∀ {ℓ} (X : Type ℓ) → (pred : X → TYPE) → TYPE
 ```
 Notice a comprehension isn't a normal `Type`, it's a [proper class](https://en.wikipedia.org/wiki/Class_(set_theory)): (`TYPE`)!
-It won't typecheck as Type without `--type-in-type`, because the resulting type wants its level to be `ℓs ℓ` for _every_ `ℓ` - ie it wants an infinite level.
+It won't type-check as Type without `--type-in-type`, because the resulting type wants its level to be `ℓs ℓ` for _every_ `ℓ` - i.e. it wants an infinite level.
 Agda doesn't have an an infinite level `ω`, but it does have a `Typeω` which could be thought of as `Type ω` if one did exist.
-`Typeω` exists for precisely this reason - `TYPE` will typecheck as `Typeω` even without `--type-in-type`.
+`Typeω` exists for precisely this reason - `TYPE` will type-check as `Typeω` even without `--type-in-type`.
 In general, `((ℓ : Lvl) → Type ℓ) : Typeω` and the only constructor that can be applied to expressions of kind `Typeω` is `→`.
 
 We can encode a few example [natural number](https://en.wikipedia.org/wiki/Set-theoretic_definition_of_natural_numbers) `TYPE`s by quantifying over basic `Type`s.
@@ -170,11 +170,11 @@ we can unroll `paradox` to see what's happening computationally:
 -}
 ```
 
-If you try to compile the above commented code the typechecker will hang, but we can see why: `Δ∉Δ Δ∈Δ` reduces to itself!
+If you try to compile the above commented code the type-checker will hang, but we can see why: `Δ∉Δ Δ∈Δ` reduces to itself!
 
-It turns out that _all_ unsound uses of `--type-in-type` [result in typechecking non-termination](http://www.cs.nott.ac.uk/~psztxa/publ/msfp08.pdf), so we'll never construct an ill-typed value at runtime.
+It turns out that _all_ unsound uses of `--type-in-type` [result in type-checking non-termination](http://www.cs.nott.ac.uk/~psztxa/publ/msfp08.pdf), so we'll never construct an ill-typed value at run-time.
 
-For this reason we follow haskell's example and include `--type-in-type` by default, to maintain clarity by reducing noise.
+For this reason we follow Haskell's example and include `--type-in-type` by default, to maintain clarity by reducing noise.
 
 When checking a serious proof it's worth reintroducing `Level`s for consistency,
-but for interactive exploratory work or didactic communication it's nearly always a hinderance.
+but for interactive exploratory work or didactic communication it's nearly always a hindrance.
