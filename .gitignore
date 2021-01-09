@@ -4,3 +4,9 @@
 Gemfile
 Gemfile.lock
 vendor/
+html
+*.md~
+*.agda~
+*.agdai
+\#*\#
+
