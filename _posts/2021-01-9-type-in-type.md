@@ -1,5 +1,5 @@
 ---
-permalink: Type.html
+permalink: agda/Type.html
 ---
 <pre class="Agda"><a id="9" class="Symbol">{-#</a> <a id="13" class="Keyword">OPTIONS</a> <a id="21" class="Pragma">--type-in-type</a> <a id="36" class="Symbol">#-}</a>
 <a id="40" class="Keyword">module</a> <a id="47" href="Type.html" class="Module">Type</a> <a id="52" class="Keyword">where</a>
