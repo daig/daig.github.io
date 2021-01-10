@@ -51,14 +51,12 @@ It would be annoying to figure out which type level to use on our own, so types 
 The full polymorphic type is `Type : (ℓ : Lvl) → Type (ℓs ℓ)`, for a special `Lvl` type:
 
 ```agda
-{-
-postulate Lvl : Type
-{-# BUILTIN LEVEL Lvl #-}
-{-# BUILTIN LEVELZERO ℓ0  #-} -- : Lvl
-{-# BUILTIN LEVELSUC  ℓs  #-} -- : Lvl → Lvl
-{-# BUILTIN LEVELMAX  _⊔_ #-} -- : Lvl → Lvl → Lvl
-infixl 6 _⊔_
--}
+-- postulate Lvl : Type
+-- {-# BUILTIN LEVEL Lvl #-}
+-- {-# BUILTIN LEVELZERO ℓ0  #-} -- : Lvl
+-- {-# BUILTIN LEVELSUC  ℓs  #-} -- : Lvl → Lvl
+-- {-# BUILTIN LEVELMAX  _⊔_ #-} -- : Lvl → Lvl → Lvl
+-- infixl 6 _⊔_
 ```
 
 `Lvl` is a magic type. It isn't possible to pattern match on levels, and they're erased at run-time.
@@ -140,13 +138,17 @@ Now the infamous contradiction is direct: `Δ` both does and does not contain it
 
 ```agda
   Δ∉Δ : Δ ∉ Δ
-  Δ∉Δ Δ∈Δ = (π₁ x∈Δ↔x∉x) Δ∈Δ Δ∈Δ
+  Δ∉Δ Δ∈Δ = (π₁ x∈Δ↔x∉x) Δ∈Δ Δ∈Δ 
 
   Δ∈Δ : Δ ∈ Δ
   Δ∈Δ = (π₂ x∈Δ↔x∉x) Δ∉Δ
 
   paradox : ⊥
   paradox = Δ∉Δ Δ∈Δ
+
+  open import Data.Nat using (ℕ)
+  x : ℕ
+  x = 3
 ```
 
 So how bad is this? What's actually going on?
@@ -159,15 +161,13 @@ But Russel's paradox is quite weird, and one might wonder how easy it is to acci
 we can unroll `paradox` to see what's happening computationally:
 
 ```agda
-{-
-  _ : paradox ≡ paradox
-  _      = paradox
-       ≡⟨⟩ Δ∉Δ                          Δ∈Δ
-       ≡⟨⟩ (x∈Δ→x∉x Δ∈Δ)                Δ∈Δ
-       ≡⟨⟩ (x∈Δ→x∉x (x∉x→x∈Δ Δ∉Δ))      Δ∈Δ
-       ≡⟨⟩ (x∈Δ→x∉x ((Δ , Δ∉Δ) , refl)) Δ∈Δ
-       ≡⟨⟩ Δ∉Δ                          Δ∈Δ ∎
--}
+-- _ : paradox ≡ paradox
+--  _      = paradox
+--       ≡⟨⟩ Δ∉Δ                          Δ∈Δ
+--       ≡⟨⟩ (x∈Δ→x∉x Δ∈Δ)                Δ∈Δ
+--       ≡⟨⟩ (x∈Δ→x∉x (x∉x→x∈Δ Δ∉Δ))      Δ∈Δ
+--       ≡⟨⟩ (x∈Δ→x∉x ((Δ , Δ∉Δ) , refl)) Δ∈Δ
+--       ≡⟨⟩ Δ∉Δ                          Δ∈Δ ∎
 ```
 
 If you try to compile the above commented code the type-checker will hang, but we can see why: `Δ∉Δ Δ∈Δ` reduces to itself!
