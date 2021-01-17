@@ -32,8 +32,8 @@ record Dynamic : Type₁ where
     Ty : Type₀
     term : Ty
 
-Dynamic∀ : Type₀
-Dynamic∀ = ∀ {r : Type₀} → (((Ty : Type₀) → Ty) → r) → r
+Dynamic∀ : Type₁ 
+Dynamic∀ = ∀ {r : Type₀} → ((Ty : Type₀) → Ty → r) → r
 ```
 
 Contrast this with the identity type, which is at the same level as `Ty` because it takes it as a generic parameter, rather than existentially quantifying over it.
