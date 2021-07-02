@@ -3,6 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
-Yes hello this is Dai ☸
+Yes, Hello this is D.O.G.
 
-🐦:  @dailectic
+🐦:  @_daimon__
