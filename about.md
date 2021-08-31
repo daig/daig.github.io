@@ -5,4 +5,4 @@ permalink: /about/
 ---
 Yes, Hello this is D.O.G.
 
-🐦:  @_daimon__
+🐦:  @dailectic
