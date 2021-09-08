@@ -23,7 +23,7 @@ I became an ASP graduate fellow at MIT to expand into compilers research but was
 
 By 2016 I'd "given up" on academia altogether.
 
-I did differential privacy R&D on the original [LeapYear Technologies](https://leapyear.io/) team - but found commercial R&D to have its own issues with severe misalignment to public good and escaped before doing too much (what I saw as) harm.
+I did [differential privacy](https://github.com/daig/diff-priv/blob/master/differential_privacy.pdf) R&D on the original [LeapYear Technologies](https://leapyear.io/) team - but found commercial R&D to have its own issues with severe misalignment to public good and escaped before doing too much (what I saw as) harm.
 
 Thoroughly crushed, I went underground, spending the next few years perfecting my technical and sociological craft as a [Haskell](https://www.youtube.com/watch?v=06x8Wf2r2Mc) engineer while staying close to research communities - exploring other types of research, funding models, and attempts at scalable epistemic communities.
 
