@@ -31,7 +31,7 @@ In 2019 I started receiving individual grants to do what is now called [Categori
 
 This reawoke my passion for research but I quickly realized it wouldn't scale: The more cutting edge the research the fewer individual funders could understand it. As I progressed I became less and less inclined to communicate openly, and felt strong pressure to veer off-course to more narratively compelling (in my opinion) dead ends.
 
-I realized that if I wanted to become anything more than someone who whispered in the ears of those who'd already paid their debts to academia, I'd have to nucleate a new paradigm prioritizing unique rather than "incremental" research.
+I realized that if I wanted to become anything more than someone who [whispered in the ears](https://www.alignmentforum.org/s/2A7rrZ4ySx6R8mfoT/p/BSpdshJWGAW6TuNzZ) of those who'd already paid their debts to academia, I'd have to nucleate a new paradigm prioritizing unique rather than "incremental" research.
 
 When I saw [Alexey](https://twitter.com/alexeyguzey)'s article on [How the life sciences actually work](https://guzey.com/how-life-sciences-actually-work/), I thought "Yes! This is exactly what I've experienced, I'm glad someone from the outside gets it!"
 
