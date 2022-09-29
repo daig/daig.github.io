@@ -9,10 +9,6 @@ This agenda has been brewing for many years, built on my work in computational b
 
 My deepest lesson from New Science is the affirmation that (asymmetrically positive) progress is not (currently) bottlenecked by expertise, but by ontology bandwidth - the rate that experts are willing and able to communicate their low-level "pre-paradigmatic" models. Part of this is an incentive problem: low-level models are necessary for mastery but furthest from shiny new results. Part of it is a technical problem: as of yet, ontology transfer happens merely by accident - we have no reliable way to hasten or deepen it. We have some handles: aristocratic tutoring / mentorship, rivalry, and intrinsic (vs instrumental) intellectual motivation seem correlated. We have historic examples of small, deeply aligned yet diverse groups performing orders of magnitude better: Xerox PARC, Bell Labs, Cold Spring Harbor, The Manhattan Project, etc. but we really have no idea why, none of the common accounts hold water, they aren't reproducible.
 
-My current approach takes this low-level "_context sensitive_" exchange bandwidth as primary while analyzing stability. It has the benefit of being asymmetrically-positive, AFAICT avoiding the capabilities slant inherent in traditional game theoretic and machine learning approaches to coordination. It merely discovers and glues existing sense-making in a shear-minimizing way. "Perfect Coordination" is _local_ and _unique in context_. In particular, "Perfect Coordination" with "enemies" is possible - it's only a sign flip.
-It is _NOT_ a recipe for a perfect utopia conditional on "the good guys win".
-Utopia is extremely sus; I hope you will see why.
-
 As pre-paradigmatic content, there is no one-size-fits-all entry-point.
 
 In the absence of a digestible narrative for "SCE done right", below is an annotated reading list with the necessary foundations, which is itself sufficient to "get" the agenda.
