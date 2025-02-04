@@ -11,3 +11,4 @@ kramdown:
 defaults:
   - scope:
       path: "agda"
+include: [".well-known"]
